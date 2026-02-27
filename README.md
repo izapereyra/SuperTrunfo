@@ -9,6 +9,8 @@ O programa:
   - **Exibe resultados formatados**
   - **Foco em operadores aritméticos, tipos de dados e conversão de tipos.**
 
+Mais do que entregar um exercício, esse projeto representa um passo importante na consolidação da minha base em programação.
+
 -------------------------------------
 
 # Desafio Super Trunfo - Países - Cadastro das Cartas
