@@ -15,8 +15,13 @@ int main (void){
     // O Produto Interno Bruto da cidade. Tipo: float
     int ptur1, ptur2;
     // A quantidade de pontos turísticos na cidade. Tipo: int
+    float densidade1, densidade2;
+    // Divida a população da cidade pela sua área. O resultado será a densidade populacional, que representa o número de habitantes por quilômetro quadrado.
+    float pibcapita1, pibcapita2;
+    // Divida o PIB da cidade pela sua população. O resultado será o PIB per capita, que indica a riqueza média por pessoa na cidade.
 
-    printf ("SUPER TRUNFO EM C - Desafio: nível novato\n");
+
+    printf ("SUPER TRUNFO EM C - Desafio: nível aventureiro\n");
 
         // CARTA 1
     printf ("Digite uma letra de 'A' a 'H' para a primeira carta: ");
@@ -40,6 +45,10 @@ int main (void){
 
     printf ("Digite a quantidade de pontos turísticos na cidade: ");
     scanf ("%d", &ptur1);
+    
+    // Calculando densidade e pib per capita - Carta 1
+    densidade1 = (float) populacao1 / area1;
+    pibcapita1 = (float) pib1 / populacao1;
 
         // CARTA 2
     printf ("\nDigite uma letra de 'A' a 'H' para a segunda carta: ");
@@ -61,10 +70,15 @@ int main (void){
     scanf ("%f", &pib2);
 
     printf ("Digite a quantidade de pontos turísticos na cidade: ");
-    scanf ("%d\n", &ptur2);
+    scanf ("%d", &ptur2);
+
+    // Calculando densidade e pib per capita - Carta 2
+    densidade2 = (float) populacao2 / area2;
+    pibcapita2 = (float) pib2 / populacao2;
+
 
     // MOSTRANDO AS INFORMAÇÕES DIGITADAS:
-    printf ("\nCarta 1\n");
+    printf ("\n\nCarta 1\n");
     printf ("Estado: %c\n", estado1);
     printf ("Código: %s\n", codigocarta1);
     printf ("Nome da Cidadade: %s\n", cidade1);
@@ -72,6 +86,8 @@ int main (void){
     printf ("Área: %.2f km²\n", area1);
     printf ("PIB: %.2f bilhões de reais\n", pib1);
     printf ("Número de Pontos Turísticos: %d\n", ptur1);
+    printf ("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf ("PIB per Capita: %.2f reais\n", pibcapita1);
 
     printf ("\nCarta 2\n");
     printf ("Estado: %c\n", estado2);
@@ -81,7 +97,8 @@ int main (void){
     printf ("Área: %.2f km²\n", area2);
     printf ("PIB: %.2f bilhões de reais\n", pib2);
     printf ("Número de Pontos Turísticos: %d\n", ptur2);
-
+    printf ("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf ("PIB per Capita: %.2f reais", pibcapita2);
 
     return 0;
 }
